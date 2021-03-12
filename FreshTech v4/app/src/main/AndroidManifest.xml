@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eina.unizar.freshtech">
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icono"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icono"
+        android:supportsRtl="true">
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ContraseñaEdit"
+            android:label="Editar Contraseña"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:parentActivityName=".PrincipalActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".ConfiguracionActivity"
+            android:label="Configuración"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:parentActivityName=".PrincipalActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".ImagenEdit"
+            android:label="Editar Imagen"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:parentActivityName=".PrincipalActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".DocumentoEdit"
+            android:label="Editar Documento"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:parentActivityName=".PrincipalActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Registrarse"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

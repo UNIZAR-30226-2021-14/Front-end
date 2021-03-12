@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_icono_fragment_principal"
+            android:title="@string/menu_principal" />
+        <item
+            android:id="@+id/nav_contraseñas"
+            android:icon="@drawable/ic_candado"
+            android:title="@string/contraseñas" />
+        <item
+            android:id="@+id/nav_documentos"
+            android:icon="@drawable/ic_documento"
+            android:title="@string/documentos" />
+        <item
+            android:id="@+id/nav_imagenes"
+            android:icon="@drawable/ic_imagen"
+            android:title="@string/imagenes" />
+        <item
+            android:id="@+id/nav_categorias"
+            android:icon="@drawable/ic_icono_fragment_categorias"
+            android:title="@string/menu_categorias" />
+    </group>
+
+    <group>
+        <item android:title=""
+            >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/configuracionFragment"
+                        android:icon="@drawable/ic_configuracion"
+                        android:title="@string/configuracion" />
+                    <item
+                        android:id="@+id/loginActivity"
+                        android:icon="@drawable/ic_cerrar_sesion"
+                        android:title="@string/cerrar_sesion" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>

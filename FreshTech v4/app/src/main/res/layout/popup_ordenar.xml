@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#202732">
+
+    <TextView
+        android:id="@+id/ordenarPor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ordenar_por"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordenarPor">
+
+        <RadioButton
+            android:id="@+id/radio_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:padding="5dp"
+            android:button="@drawable/custome_radiobutton"
+            android:textColor="#ffff" />
+
+        <RadioButton
+            android:id="@+id/radio_fechaCreacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_fecha_creacion"
+            android:padding="5dp"
+            android:checked="true"
+            android:button="@drawable/custome_radiobutton"
+            android:textColor="#ffff" />
+
+        <RadioButton
+            android:id="@+id/radio_fechaExpiracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_fecha_expiracion"
+            android:padding="5dp"
+            android:button="@drawable/custome_radiobutton"
+            android:textColor="#ffff" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ordenarDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ordenar_de"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordenarDe">
+
+        <RadioButton
+            android:id="@+id/radio_menor_mayor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menor_a_mayor"
+            android:padding="5dp"
+            android:checked="true"
+            android:button="@drawable/custome_radiobutton"
+            android:textColor="#ffff" />
+
+        <RadioButton
+            android:id="@+id/radio_mayor_menor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mayor_a_menor"
+            android:padding="5dp"
+            android:button="@drawable/custome_radiobutton"
+            android:textColor="#ffff" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
