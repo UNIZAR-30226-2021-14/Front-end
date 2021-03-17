@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ModalHeader,ModalBody, ModalFooter } from 'reactstrap';
+import {Button,ModalHeader,ModalBody, ModalFooter } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types'
 
@@ -20,7 +20,6 @@ class Popup extends React.Component {
             </ModalBody>
             <ModalFooter>
                 <Button onClick={this.props.closePopup}>close me</Button>
-                <div>{this.props.sendData}</div>
             </ModalFooter>
           </div>
         </div>
