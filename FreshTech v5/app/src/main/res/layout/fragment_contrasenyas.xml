@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ListView
+        android:id="@+id/listViewContraseñas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menuFlotante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:fab_addButtonColorNormal="@color/colorPrimary"
+        app:fab_addButtonColorPressed="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botonFlotanteAñadirContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#008577"
+            app:fab_colorPressed="#008577"
+            app:fab_icon="@drawable/ic_candado"
+            app:fab_size="mini"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botonFlotanteAñadirDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#008577"
+            app:fab_colorPressed="#008577"
+            app:fab_icon="@drawable/ic_documento"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botonFlotanteAñadirImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#008577"
+            app:fab_colorPressed="#008577"
+            app:fab_icon="@drawable/ic_imagen"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botonFlotanteAñadirCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#008577"
+            app:fab_colorPressed="#008577"
+            app:fab_icon="@drawable/ic_icono_fragment_categorias"
+            app:fab_size="mini" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#202732">
+
+    <ImageButton
+        android:id="@+id/copiarAlPortapapeles"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/LongitudContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_copy" />
+
+    <ImageButton
+        android:id="@+id/regenerarContraseña"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/LongitudContraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_icono_fragment_generador" />
+
+    <EditText
+        android:id="@+id/generar_contraseña_avanzada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#008577"
+        android:inputType="textVisiblePassword"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/LongitudContraseñaAvanzada"
+        app:layout_constraintEnd_toStartOf="@+id/copiarAlPortapapeles"
+        app:layout_constraintStart_toEndOf="@+id/regenerarContraseña"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/LongitudContraseñaAvanzada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Longitud de contraseña: 8"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/BarraLongitudAvanzada"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/BarraLongitudAvanzada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:max="92"
+        android:progressBackgroundTint="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LongitudContraseñaAvanzada" />
+
+    <TextView
+        android:id="@+id/masOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Más opciones"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/switchMayus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarraLongitudAvanzada"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switchMayus"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/A_Z"
+        android:textColor="#FFFFFF"
+        android:thumbTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/switchMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchMinus"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/a_z"
+        android:textColor="#FFFFFF"
+        android:thumbTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/switchNums"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchNums"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/_0_9"
+        android:textColor="#FFFFFF"
+        android:thumbTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/switchEsp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchEsp"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/caracteres_especiales"
+        android:textColor="#FFFFFF"
+        android:thumbTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
