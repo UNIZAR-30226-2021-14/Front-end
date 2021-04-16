@@ -119,6 +119,9 @@ public class RegisterActivity extends AppCompatActivity implements Callback<Regi
             Intent i = new Intent(this, LoginActivity.class);
             startActivityForResult(i, ACTIVITY_LOGIN);
             finish();
+        } else {
+            correo.setError("Usuario ya existe");
+            Toast.makeText(this, "Revise la validación de los campos", Toast.LENGTH_SHORT).show();
         }
     }
 
