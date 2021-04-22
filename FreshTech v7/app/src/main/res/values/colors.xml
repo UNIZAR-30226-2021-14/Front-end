@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#202732</color>
+    <color name="colorAccent">#008577</color>
+    <color name="colorLetra">#fff</color>
+    <color name="colorDefault">#dcdcdc</color>
+    <color name="Bad">#FF0000</color>
+    <color name="BadAverage">#FFFF00</color>
+    <color name="Average">#FFFF00</color>
+    <color name="AverageGood">#7FFF00</color>
+    <color name="Good">#00FF00</color>
+</resources>

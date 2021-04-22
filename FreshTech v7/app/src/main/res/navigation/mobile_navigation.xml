@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="eina.unizar.freshtech.HomeFragment"
+        android:label="@string/menu_principal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_contraseñas"
+        android:name="eina.unizar.freshtech.ContraseñasFragment"
+        android:label="@string/contraseñas"
+        tools:layout="@layout/fragment_contrasenyas" />
+
+    <fragment
+        android:id="@+id/nav_documentos"
+        android:name="eina.unizar.freshtech.DocumentosFragment"
+        android:label="@string/documentos"
+        tools:layout="@layout/fragment_documentos" />
+
+    <fragment
+        android:id="@+id/nav_imagenes"
+        android:name="eina.unizar.freshtech.ImagenesFragment"
+        android:label="@string/imagenes"
+        tools:layout="@layout/fragment_imagenes" />
+
+    <fragment
+        android:id="@+id/nav_categorias"
+        android:name="eina.unizar.freshtech.CategoriasFragment"
+        android:label="@string/menu_categorias"
+        tools:layout="@layout/fragment_categorias" />
+
+    <activity
+        android:id="@+id/popupContacto"
+        android:name="eina.unizar.freshtech.PopupContacto"
+        android:label="@string/contacto"
+        tools:layout="@layout/popup_contacto"/>
+
+    <activity
+        android:id="@+id/configuracionFragment"
+        android:name="eina.unizar.freshtech.ConfiguracionActivity"
+        android:label="fragment_configuracion"
+        tools:layout="@layout/activity_configuracion" />
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="eina.unizar.freshtech.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+
+</navigation>
